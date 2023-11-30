@@ -11,13 +11,13 @@ public class AbstractTest {
     }
 }
 
-abstract class Vechicle{
+abstract class Vechicle1{
     public abstract double calcFuelEfficiency();
 
     public abstract double calcTripDistance();
 }
 
-class Truck extends Vechicle {
+class Truck extends Vechicle1 {
     public double calcFuelEfficiency(){
         return 0;
     }
@@ -26,7 +26,7 @@ class Truck extends Vechicle {
         return 0;
     }
 }
-class RiverBarge extends Vechicle{
+class RiverBarge extends Vechicle1{
     public double calcFuelEfficiency(){
         return 0;
     }

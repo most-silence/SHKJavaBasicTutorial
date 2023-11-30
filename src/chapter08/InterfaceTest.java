@@ -139,6 +139,7 @@ interface Chargeable{
     void charge();
     void in();
     void out();
+
 }
 
 interface USBC  extends Chargeable, USB3{
