@@ -22,15 +22,22 @@ import com.sun.org.apache.bcel.internal.classfile.InnerClass;
 public class InnerClassTest2 {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
+        OuterClass2 OuterClass2 = new OuterClass2();
+        chapter08.OuterClass2.outMethod();
 
+        OuterClass2 outerClass2 = new OuterClass2();
+        outerClass2.outTest();
+
+        Runner runner = OuterClass2.getRunner();
+        runner.run();
     }
 }
-class OuterClass{
+class OuterClass2{
     public static void outMethod(){
-        System.out.println("OuterClass.outMethod()");
+        System.out.println("OuterClass2.outMethod()");
         final String c= "Local c";
         class InnerClass{
-            public void inMethod(){
+                public void inMethod(){
                 System.out.println("InnerClass.inMethod()");
                 System.out.println(c);
             }
